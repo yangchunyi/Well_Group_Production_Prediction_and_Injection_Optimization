@@ -66,7 +66,6 @@ if __name__ == '__main__':
         plot_picture_pre(test_ydata, pre_data)
         pre_data = np.array(pre_data).reshape(-1, )
         test_ydata = np.array(test_ydata).reshape(-1, )
-        # 计算R²值
         r2 = r2_score(pre_data, test_ydata)
         print(f'R²: {r2:.4f}')
 
